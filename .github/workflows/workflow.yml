@@ -36,7 +36,7 @@ jobs:
         run: |
           aws deploy create-deployment \
             --application-name landing-page \
-            --deployment-group-name wisest-deployment \
+            --deployment-group-name wisestGroup \
             --deployment-config-name CodeDeployDefault.OneAtATime \
             --file-exists-behavior OVERWRITE \
             --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
